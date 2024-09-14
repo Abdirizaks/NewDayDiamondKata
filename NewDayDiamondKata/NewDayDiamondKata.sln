@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDayDiamondKata", "NewDayDiamondKata\NewDayDiamondKata.csproj", "{5AC52066-F1A9-4634-A2EC-28366405D3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDayDiamondKata.UnitTest", "NewDayDiamondKata.UnitTest\NewDayDiamondKata.UnitTest.csproj", "{74172C32-F899-405D-920B-FCF43AD62DE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AC52066-F1A9-4634-A2EC-28366405D3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC52066-F1A9-4634-A2EC-28366405D3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC52066-F1A9-4634-A2EC-28366405D3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC52066-F1A9-4634-A2EC-28366405D3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74172C32-F899-405D-920B-FCF43AD62DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74172C32-F899-405D-920B-FCF43AD62DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74172C32-F899-405D-920B-FCF43AD62DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74172C32-F899-405D-920B-FCF43AD62DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
