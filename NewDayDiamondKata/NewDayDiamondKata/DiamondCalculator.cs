@@ -2,39 +2,25 @@
 
 public interface IDiamondCalculator
 {
-    bool IsOdd(int n);
     int MiddleRow(int n);
-    string RowCharacters(int n, int spaces);
-    string RowSpacing(int n);
-
-    string GetMiddleRowCharacters(string diamond);
-
+    int RowCharacters(int n, int spaces);
+    int RowSpacing(int n, int i);
 }
 
 public class DiamondCalculator : IDiamondCalculator
 {
-    public bool IsOdd(int n)
-    {
-        throw new NotImplementedException();
-    }
-
     public int MiddleRow(int n)
     {
-        throw new NotImplementedException();
+        return n / 2 + 1;
     }
 
-    public string RowCharacters(int n, int spaces)
+    public int RowCharacters(int n, int spaces)
     {
-        throw new NotImplementedException();
+        return n - spaces * 2;
     }
 
-    public string RowSpacing(int n)
+    public int RowSpacing(int n, int i)
     {
-        throw new NotImplementedException();
-    }
-
-    public string GetMiddleRowCharacters(string diamond)
-    {
-        throw new NotImplementedException();
+        return Math.Abs(n / 2 - i);
     }
 }
