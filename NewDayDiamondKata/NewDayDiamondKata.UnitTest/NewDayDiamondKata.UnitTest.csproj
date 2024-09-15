@@ -10,4 +10,10 @@
       <ProjectReference Include="..\NewDayDiamondKata\NewDayDiamondKata.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="6.12.1" />
+      <PackageReference Include="NSubstitute" Version="5.1.0" />
+      <PackageReference Include="xunit" Version="2.9.0" />
+    </ItemGroup>
+
 </Project>

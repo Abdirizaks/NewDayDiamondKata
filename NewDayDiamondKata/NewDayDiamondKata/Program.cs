@@ -1,9 +1,13 @@
-﻿namespace NewDayDiamondKata;
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace NewDayDiamondKata;
 
 class Program
 {
-    static void Main(string[] argss)
+    static void Main(string[] args)
     {
-        Console.WriteLine("Hello World!");
+        var serviceProvider = new ServiceCollection()
+            .AddSingleton<IDiamondCalculator, DiamondCalculator>()
+            .BuildServiceProvider();
     }
 }
