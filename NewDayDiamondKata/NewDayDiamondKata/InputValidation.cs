@@ -2,7 +2,7 @@
 
 public static class InputValidation
 {
-    public static (bool valid, char character) ValidateCharacterInput(string input)
+    public static (bool valid, char character) ValidateCharacterInput(string? input)
     {
         if (string.IsNullOrEmpty(input) is false && input.Length == 1 && IsAlphabet(input))
         {
