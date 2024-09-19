@@ -7,14 +7,15 @@ static class Program
     private static void Main()
     {
         var serviceProvider = new ServiceCollection()
-            .AddSingleton<ICharacterCalculator, CharacterCalculator>()
-            .AddSingleton<IDiamondCreator, DiamondCreator>()
+            .AddSingleton<IPrinterCalculator, PrinterCalculator>()
             .BuildServiceProvider();
 
-        var diamondCalculator = serviceProvider.GetRequiredService<ICharacterCalculator>();
-        var diamondPrinter = serviceProvider.GetRequiredService<IDiamondCreator>();
-        var diamondService = new DiamondService(diamondCalculator, diamondPrinter);
-        diamondService.Orchestrate();
+        var diamondCalculator = serviceProvider.GetRequiredService<IPrinterCalculator>();
+
+        var diamondService = new DiamondPrinter(diamondCalculator);
+        Console.WriteLine("Enter a letter: ");
+        var letter = Console.ReadLine();
+        diamondService.PrintDiamond(letter);
         Console.WriteLine("\n\nEnd of program. Press any key to exit.");
         Console.ReadLine();
     }
